@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.familiasProducto {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ultimos div {
+    display: flex;
+    flex-direction: column
+}
+
+.familiasProducto h2 {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.familiasProducto h3 {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
