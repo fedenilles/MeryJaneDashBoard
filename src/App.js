@@ -4,21 +4,23 @@ import Header from "./Views/HeaderYFooter/Header.jsx"
 import Footer from "./Views/HeaderYFooter/Footer";
 import Ultimos from "./Components/Ultimos/Ultimos";
 import Familias from "./Components/FamiliasProducto/FamiliasProducto";
+import TablaProductos from "./Components/TablaProductos/TablaProductos"
+import "./Components/Totales/material-dashboard.css"
 
 function App() {
   return (
-    <div className="contenedorGral">
+    <div className="g-sidenav-show  bg-gray-200">
 
       <Header/>
-
 
       <Totales />
     
       <Ultimos/>
-      <Familias/>
-      <div className="productosEnDb">
 
-      </div>
+      <Familias/>
+
+      <TablaProductos/>
+
       <Footer/>
 
     </div>
