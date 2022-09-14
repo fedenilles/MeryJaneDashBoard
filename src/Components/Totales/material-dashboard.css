@@ -10846,7 +10846,7 @@ fieldset:disabled .btn {
 }
 
 .z-index-2 {
-  height: 350px;
+  height: 50vh;
   z-index: 2 !important;
 }
 

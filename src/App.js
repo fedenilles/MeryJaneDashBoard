@@ -5,11 +5,15 @@ import Footer from "./Views/HeaderYFooter/Footer";
 import Ultimos from "./Components/Ultimos/Ultimos";
 import Familias from "./Components/FamiliasProducto/FamiliasProducto";
 import TablaProductos from "./Components/TablaProductos/TablaProductos"
+import SideBar from "./Components/SideBar/SideBar";
 import "./Components/Totales/material-dashboard.css"
 
 function App() {
   return (
     <div className="g-sidenav-show  bg-gray-200">
+      <SideBar/>
+
+      <div className= "main-content position-relative h-100 border-radius-lg">
 
       <Header/>
 
@@ -22,7 +26,7 @@ function App() {
       <TablaProductos/>
 
       <Footer/>
-
+      </div>
     </div>
   );
 }

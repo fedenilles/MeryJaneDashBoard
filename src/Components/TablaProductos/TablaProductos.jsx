@@ -16,9 +16,8 @@ function TablaProductos () {
                     <tr>
                       <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
                       <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Price</th>
-                      <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Category</th>
-                      <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Familie</th>
-                      <th className="text-secondary opacity-7"></th>
+                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Category</th>
+                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Familie</th>
                     </tr>
                   </thead>
                   <tbody>
