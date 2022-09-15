@@ -1,7 +1,9 @@
 import React, {useEffect, useState, useRef} from "react";
 
 
-function Totales () {
+function Totales (props) {
+  const {productos, familias, usuarios} = props
+
 
     return(
         <div className="row">
@@ -13,7 +15,7 @@ function Totales () {
               </div>
               <div className="text-end pt-1">
                 <p className="text-sm mb-0 text-capitalize">Total Products</p>
-                <h4 className="mb-0">53</h4>
+                <h4 className="mb-0">{ productos.length }</h4>
               </div>
             </div>
           </div>
@@ -26,7 +28,7 @@ function Totales () {
               </div>
               <div className="text-end pt-1">
                 <p className="text-sm mb-0 text-capitalize">Total Users</p>
-                <h4 className="mb-0">31</h4>
+                <h4 className="mb-0"> {usuarios.length} </h4>
               </div>
             </div>
           </div>
@@ -39,7 +41,7 @@ function Totales () {
               </div>
               <div className="text-end pt-1">
                 <p className="text-sm mb-0 text-capitalize">Total Families</p>
-                <h4 className="mb-0">4</h4>
+                <h4 className="mb-0"> {familias.length} </h4>
               </div>
             </div>
           </div>

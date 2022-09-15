@@ -1,6 +1,8 @@
 import React from "react";
 
-function TablaProductos () {
+function TablaProductos (props) {
+  const {productos, familias, usuarios} = props
+
     return (
         <div className="row mt-4">
         <div className="card my-4">
@@ -21,16 +23,18 @@ function TablaProductos () {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    {productos.map((producto) => {
+                      return(
+                        <tr key={producto.id}>
                       <td>
                         <div className="d-flex px-2 py-1">
                           <div className="d-flex flex-column justify-content-center">
-                            <h6 className="mb-0 text-sm">ProducName</h6>
+                            <h6 className="mb-0 text-sm"> {producto.Nombre} </h6>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p className="text-xs font-weight-bold mb-0">ProductPrice</p>
+                        <p className="text-xs font-weight-bold mb-0">{producto.Precio}</p>
                       </td>
                       <td>
                         <p className="text-xs font-weight-bold mb-0">ProductCategory</p>
@@ -39,6 +43,10 @@ function TablaProductos () {
                         <p className="text-xs font-weight-bold mb-0">ProductFamilie</p>
                       </td>
                     </tr>
+
+                      )
+                    } )}
+                    
                   </tbody>
                 </table>
               </div>

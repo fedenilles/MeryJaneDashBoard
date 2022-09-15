@@ -13,20 +13,26 @@ import Totales from "../../Components/Totales/Totales";
 function ConCucharaGral () {
 
     const [usuarios, setUsuarios] = useState([]);
-    console.log(usuarios);
+    const [productos, setProductos] = useState([]);
+    const [familias, setFamilias] = useState([]);
 
 
     useEffect ( () => {
 
-        const FetchData = async () => {
-
+        const fetchUsers = async () => {
             const response = await fetch('http://localhost:3001/api/users')
-            const usuarios = await response.json
-
-
+            const users = await response.json();
+            setUsuarios(users.data);
         }
-        FetchData()
-            .catch(console.error);
+        const fetchProducts = async () => {
+            const response = await fetch('http://localhost:3001/api/products')
+            const products = await response.json();
+            setProductos(products.data);
+            setFamilias(products.meta.Categorias)
+        }
+        fetchUsers()
+        fetchProducts()
+            
     }, [])
 
     return (
@@ -34,13 +40,13 @@ function ConCucharaGral () {
 
         <Header/>
   
-        <Totales />
+        <Totales productos={productos} usuarios={usuarios} familias={familias}/>
       
-        <Ultimos/>
+        <Ultimos productos={productos} usuarios={usuarios} familias={familias}/>
   
-        <Familias/>
+        <Familias productos={productos} usuarios={usuarios} familias={familias}/>
   
-        <TablaProductos/>
+        <TablaProductos productos={productos} usuarios={usuarios} familias={familias}/>
   
         <Footer/>
         </div>
