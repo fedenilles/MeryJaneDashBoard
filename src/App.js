@@ -1,32 +1,15 @@
-import Totales from "./Components/Totales/Totales";
-import './Assets/css/contenedorGral.css'
-import Header from "./Views/HeaderYFooter/Header.jsx"
-import Footer from "./Views/HeaderYFooter/Footer";
-import Ultimos from "./Components/Ultimos/Ultimos";
-import Familias from "./Components/FamiliasProducto/FamiliasProducto";
-import TablaProductos from "./Components/TablaProductos/TablaProductos"
 import SideBar from "./Components/SideBar/SideBar";
-import "./Components/Totales/material-dashboard.css"
+import "./Assets/css/material-dashboard.css"
+import ConCucharaGral from './Views/ConCucharaGral/ConCucharaGral';
 
 function App() {
   return (
     <div className="g-sidenav-show  bg-gray-200">
+      
       <SideBar/>
 
-      <div className= "main-content position-relative h-100 border-radius-lg">
+      <ConCucharaGral/>
 
-      <Header/>
-
-      <Totales />
-    
-      <Ultimos/>
-
-      <Familias/>
-
-      <TablaProductos/>
-
-      <Footer/>
-      </div>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./ultimos.css"
-import "../Totales/material-dashboard.css"
 import Image from "../../Assets/images/img.png"
 
 function Ultimos () {

@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import './totales.css';
-import './material-dashboard.css'
+import React, {useEffect, useState, useRef} from "react";
 
 
 function Totales () {

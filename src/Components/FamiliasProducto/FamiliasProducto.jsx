@@ -1,5 +1,4 @@
 import React from "react";
-import "./familiasProducto.css"
 
 function Familias () {
     return (
