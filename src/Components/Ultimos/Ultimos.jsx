@@ -1,13 +1,8 @@
 import React from "react";
-import Image from "../../Assets/images/img.png"
+import imageDefault from "../../Assets/images/img.png"
 
 function Ultimos(props) {
   const { productos, usuarios } = props
-
-  
-
-
-
 
   return (
     
@@ -19,8 +14,8 @@ function Ultimos(props) {
         
         <div className="card z-index-2 ">
 
-          <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-            <img src={productos[productos.length - 1].imagen} style={{ width: "90%" }} alt="Logo Mary Jane" />
+          <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent card-header-center">
+            <img src={ productos[productos.length - 1].imagen !=='N/A'? productos[productos.length - 1].imagen : imageDefault} style={{ width: "80%" }} alt="Logo Mary Jane" />
           </div>
           <div className="card-body">
             <h6 className="mb-0 ">Ultimo Producto</h6>
@@ -42,8 +37,8 @@ function Ultimos(props) {
       {  usuarios.length === 0 && <h2>Cargando</h2>}
         {  usuarios.length !== 0 &&
         <div className="card z-index-2 ">
-          <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-            <img src={usuarios[usuarios.length - 1].Avatar} style={{ width: "90%" }} alt="Logo Mary Jane" />
+          <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent card-header-center">
+            <img src={ usuarios[usuarios.length - 1].Avatar !== "N/A" ? usuarios[usuarios.length - 1].Avatar : imageDefault} style={{ width: "90%" }} alt="Logo Mary Jane" />
           </div>
           <div className="card-body">
             <h6 className="mb-0 ">Ultimo Usuario</h6>

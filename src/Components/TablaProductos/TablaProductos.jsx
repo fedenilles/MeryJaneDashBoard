@@ -1,7 +1,21 @@
 import React from "react";
+import {useEffect, useState} from "react";
 
-function TablaProductos (props) {
-  const {productos} = props
+function TablaProductos () {
+
+    const [productos, setProductos] = useState([]);
+
+    useEffect ( () => {
+
+        const fetchProducts = async () => {
+            const response = await fetch('http://localhost:3001/api/products')
+            const products = await response.json();
+            setProductos(products.data);
+        }
+        fetchProducts()
+            
+    }, [])
+
 
     return (
         <div className="row mt-4">

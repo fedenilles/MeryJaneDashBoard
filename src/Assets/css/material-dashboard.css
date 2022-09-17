@@ -5195,6 +5195,10 @@ fieldset:disabled .btn {
   background-color: var(--bs-card-cap-bg);
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
+.card-header-center {
+  display: flex;
+  justify-content: center;
+}
 
 .card-header:first-child {
   border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
@@ -10839,7 +10843,7 @@ fieldset:disabled .btn {
 }
 
 .z-index-2 {
-  height: 50vh;
+  height: 60vh;
   z-index: 2 !important;
 }
 

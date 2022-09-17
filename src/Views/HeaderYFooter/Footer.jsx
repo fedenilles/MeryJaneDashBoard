@@ -17,14 +17,14 @@ function Footer() {
             <div className="container-bottom">
                 <div className="row">
                     <p className="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-                        <a href={"#"}>MaryJane Productions</a>.
+                        <a href={"/"}>MaryJane Productions</a>.
                     </p>
 
                     <ul className="social-icons">
-                        <li><a href={"#"}> <i className="fa-brands fa-facebook facebook"></i> </a></li>
-                        <li><a href={"#"}> <i className="fa-brands fa-linkedin linkedin"></i> </a></li>
-                        <li><a href={"#"}> <i className="fa-brands fa-instagram instagram"></i> </a></li>
-                        <li><a href={"#"}> <i className="fa-brands fa-twitter twitter"></i> </a>   </li>
+                        <li><a href={"/"}> <i className="fa-brands fa-facebook facebook"></i> </a></li>
+                        <li><a href={"/"}> <i className="fa-brands fa-linkedin linkedin"></i> </a></li>
+                        <li><a href={"/"}> <i className="fa-brands fa-instagram instagram"></i> </a></li>
+                        <li><a href={"/"}> <i className="fa-brands fa-twitter twitter"></i> </a>   </li>
                     </ul>
                 </div>
             </div>

@@ -7,9 +7,6 @@ import TablaProductos from "../../Components/TablaProductos/TablaProductos"
 import Totales from "../../Components/Totales/Totales";
 
 
-    
-
-
 function ConCucharaGral () {
 
     const [usuarios, setUsuarios] = useState([]);
