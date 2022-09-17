@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect, useState} from "react";
 import Header from "../HeaderYFooter/Header";
 import Footer from "../HeaderYFooter/Footer";
 import Ultimos from "../../Components/Ultimos/Ultimos"

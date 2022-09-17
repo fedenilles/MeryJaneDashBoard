@@ -1,7 +1,7 @@
 import React from "react";
 
 function TablaProductos (props) {
-  const {productos, familias, usuarios} = props
+  const {productos} = props
 
     return (
         <div className="row mt-4">
@@ -16,10 +16,9 @@ function TablaProductos (props) {
                 <table className="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
-                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Price</th>
-                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Category</th>
-                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Familie</th>
+                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nombre</th>
+                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Precio</th>
+                      <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Familia</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -37,10 +36,7 @@ function TablaProductos (props) {
                         <p className="text-xs font-weight-bold mb-0">{producto.Precio}</p>
                       </td>
                       <td>
-                        <p className="text-xs font-weight-bold mb-0">ProductCategory</p>
-                      </td>
-                      <td>
-                        <p className="text-xs font-weight-bold mb-0">ProductFamilie</p>
+                        <p className="text-xs font-weight-bold mb-0">{producto.Family.Nombre}</p>
                       </td>
                     </tr>
 

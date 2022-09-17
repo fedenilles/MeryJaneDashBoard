@@ -1,12 +1,13 @@
 import React from "react";
 
-function Familias () {
+function Familias (props) {
+  const {familias} = props
     return (
         <div className="row mt-4">
         <div className="card my-4">
             <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-3">
               <div className="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                <h6 className="text-white text-capitalize ps-3">Familia Tabla</h6>
+                <h6 className="text-white text-capitalize ps-3">Tabla de Familias</h6>
               </div>
             </div>
             <div className="card-body px-0 pb-2">
@@ -19,18 +20,23 @@ function Familias () {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    {familias.map((familia) => {
+                      return(
+                        <tr key={familia.id}>
                       <td>
                         <div className="d-flex px-2 py-1">
                           <div className="d-flex flex-column justify-content-center">
-                            <h6 className="mb-0 text-sm">FamiliaName</h6>
+                            <h6 className="mb-0 text-sm">{ familia.Familia } </h6>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p className="text-xs font-weight-bold mb-0">152</p>
+                        <p className="text-xs font-weight-bold mb-0">{ familia.Cantidad }</p>
                       </td>
                     </tr>
+
+                    )})}
+                    
                   </tbody>
                 </table>
               </div>
